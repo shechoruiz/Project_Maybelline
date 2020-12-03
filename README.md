@@ -1,3 +1,11 @@
+# Project_Maybelline
+
+This project is intended to consume the API "Makeup API" using React and SASS
+
+## Documentation:
+
+Using this link, you can consult the complete project documentation: https://www.notion.so/Maybelline-Cosmeticos-7caeb275db4b4a9ab560f2d62a2535b8
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
