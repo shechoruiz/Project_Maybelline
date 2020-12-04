@@ -1,0 +1,61 @@
+@import './variables';
+@import './mixins';
+
+.header{
+  background-color: $color1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  font-family: $font1;
+}
+
+.wrapper{
+  width: 95%;
+  max-width: 1180px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  @include for-phone-only {
+    flex-direction: column;
+  }
+}
+
+.logo{
+  width: 20%;
+  @include for-phone-only {
+    width: 100%;
+  }
+}
+
+.nav{
+  float: right;
+  width: 100%;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  @include for-phone-only {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.nav a{
+  text-decoration: none;
+  color: $color5;
+  margin-right: 10%;
+  font-weight: 700;
+  @include for-desktop-up {
+    font-size: $size1;
+  }
+  @include for-tablet-portrait-up{
+    font-size: $size2;
+  }
+  @include for-phone-only {
+    margin: 0 auto;
+    font-size: $size3;
+  }
+}
+

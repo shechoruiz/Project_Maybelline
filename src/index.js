@@ -1,9 +1,16 @@
+// ------------------------------ import libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// ------------------------------ import components
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// ------------------------------ import styles and images
+import './assets/styles/index.scss';
+
+// ------------------------------------ COMPONENT ------------------------------------//
+// description of the component.
 ReactDOM.render(
   <React.StrictMode>
     <App />
