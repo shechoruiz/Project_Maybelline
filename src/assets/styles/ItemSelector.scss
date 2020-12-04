@@ -3,7 +3,7 @@
 
 .itemSelector{
   background-color: $color2;
-  width: 500px;
+  width: 450px;
   padding: 15px;
   cursor: pointer;
   display: flex;
@@ -13,14 +13,18 @@
   box-shadow: $shadow1;
   border-radius: $radius1;
   border: none;
-  margin: auto;
   @include for-tablet-portrait-up {
-    width: 400px;
+    width: 300px;
     flex-direction: column;
     align-items: center;
   }
   @include for-phone-only{
-    width: 280px;
+    width: 100%;
+    align-content: space-around;
+    margin-bottom: 15px;
+  }
+  &:focus{
+    outline: none;
   }
 }
 

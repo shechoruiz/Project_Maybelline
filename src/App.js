@@ -2,7 +2,7 @@
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
-import { ItemSelector } from './components/ItemSelector';
+import { ItemContainer } from './components/ItemContainer';
 
 // ------------------------------ import styles and images
 // import logo from './logo.svg';
@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Hero /> */}
-      <ItemSelector />
+      <Hero />
+      <ItemContainer />
       <Footer />
     </div>
   );
