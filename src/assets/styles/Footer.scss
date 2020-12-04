@@ -1,0 +1,49 @@
+@import './variables';
+@import './mixins';
+
+.footer{
+  background-color: $color4;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  font-family: $font1;
+}
+
+.wrapperf{
+  width: 95%;
+  max-width: 1180px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.wrapperf p{
+  color: $color2;
+  text-align: center;
+  @include for-desktop-up {
+    font-size: $size2;
+  }
+  @include for-tablet-portrait-up{
+    font-size: $size3;
+  }
+  @include for-phone-only {
+    margin: 0 auto;
+    font-size: $size4;
+  }
+}
+
+.wrapperf p a{
+  color: $color2;
+  text-decoration: none;
+  @include for-desktop-up {
+    font-size: $size2;
+  }
+  @include for-tablet-portrait-up{
+    font-size: $size3;
+  }
+  @include for-phone-only {
+    margin: 0 auto;
+    font-size: $size4;
+  }
+}

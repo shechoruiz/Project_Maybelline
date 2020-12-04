@@ -1,9 +1,6 @@
 // ------------------------------ import libraries
 import React from 'react';
 
-// ------------------------------ import components
-// import { ImportedComponent } from '../components/ImportedComponent ';
-
 // ------------------------------ import styles and images
 import logo from '../assets/images/Maybelline_1.png'
 import '../assets/styles/Header.scss';
