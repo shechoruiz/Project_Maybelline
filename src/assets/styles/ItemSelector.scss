@@ -1,0 +1,44 @@
+@import './variables';
+@import './mixins';
+
+.itemSelector{
+  background-color: $color2;
+  width: 500px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: $font1;
+  box-shadow: $shadow1;
+  border-radius: $radius1;
+  border: none;
+  margin: auto;
+  @include for-tablet-portrait-up {
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include for-phone-only{
+    width: 280px;
+  }
+}
+
+.titleSelector > p{
+  font-size: $size1;
+  font-weight: 700;
+  @include for-tablet-portrait-up {
+    font-size: $size2;
+  }
+  @include for-phone-only{
+    font-size: $size3;
+  }
+}
+
+.descriptionSelector{
+  font-size: $size4;
+  text-align: left;
+  @include for-tablet-portrait-up {
+    text-align: center;
+  }
+}
