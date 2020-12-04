@@ -19,7 +19,7 @@
     align-items: center;
   }
   @include for-phone-only{
-    width: 100%;
+    width: 90%;
     align-content: space-around;
     margin-bottom: 15px;
   }

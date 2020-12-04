@@ -12,6 +12,9 @@ import '../assets/styles/ItemContainer.scss';
 export const ItemContainer = () => {
   return (
     <section className="itemContainer">
+      <div className="titleContainer">
+        <h1>CHOOSE BY</h1>
+      </div>
       <ItemSelector />
       <ItemSelector />
     </section>

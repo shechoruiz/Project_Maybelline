@@ -1,0 +1,17 @@
+@import './variables';
+@import './mixins';
+
+.selectProducts{
+  background-color: $color2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.titleProducts{
+  width: 100%;
+}
+
+.selectionProducts{
+  // display: flex;
+  // justify-content: space-evenly;
+}
