@@ -4,6 +4,7 @@ import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
 import { ItemContainer } from './components/ItemContainer';
 import { SelectProducts } from './components/SelectProducts';
+import { About } from './components/About';
 
 // ------------------------------ import styles and images
 // import logo from './logo.svg';
@@ -15,9 +16,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Hero />
-      <ItemContainer /> */}
-      <SelectProducts />
+      {/* <Hero /> */}
+      {/* <ItemContainer /> */}
+      {/* <SelectProducts /> */}
+      <About />
       <Footer />
     </div>
   );
