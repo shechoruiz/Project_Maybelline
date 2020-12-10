@@ -1,10 +1,12 @@
+// ------------------------------ import libraries
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 // ------------------------------ import components
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { Hero } from './components/Hero';
-import { ItemContainer } from './components/ItemContainer';
-import { SelectProducts } from './components/SelectProducts';
-import { About } from './components/About';
+import { Home } from './pages/Home';
+import { Aboutt } from './pages/About';
+import { Brands } from './pages/Brands';
+import { ProdTypes } from './pages/ProdTypes';
 
 // ------------------------------ import styles and images
 // import logo from './logo.svg';
@@ -15,12 +17,14 @@ import './assets/styles/App.scss';
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <Hero /> */}
-      {/* <ItemContainer /> */}
-      {/* <SelectProducts /> */}
-      <About />
-      <Footer />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={Aboutt} />
+          <Route exact path="/brands" component={Brands} />
+          <Route exact path="/prod_types" component={ProdTypes} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

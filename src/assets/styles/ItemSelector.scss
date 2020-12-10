@@ -1,6 +1,11 @@
 @import './variables';
 @import './mixins';
 
+a{
+  text-decoration: none;
+  color: $color5;
+}
+
 .itemSelector{
   background-color: $color2;
   width: 450px;
@@ -19,7 +24,7 @@
     align-items: center;
   }
   @include for-phone-only{
-    width: 90%;
+    width: 80vw;
     align-content: space-around;
     margin-bottom: 15px;
   }

@@ -1,22 +1,25 @@
 // ------------------------------ import libraries
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 // ------------------------------ import styles and images
-import icono1 from '../assets/images/Icono1-ProductTypes.png';
 import '../assets/styles/ItemSelector.scss';
 
 // ------------------------------------ COMPONENT ------------------------------------//
 // description of the component.
-export const ItemSelector = () => {
+export const ItemSelector = ({ link, icon, title, description }) => {
   return (
-    <button className="itemSelector">
-      <div className="iconSelector">
-        <img src={icono1} alt="Icon Product"/>
-      </div>
-      <div className="titleSelector">
-        <p>Product Types</p>
-      </div>
-      <p className="descriptionSelector">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ut magnam eius cumque ab sit ea, nemo vel quis officiis incidunt? Veritatis nobis perferendis explicabo.</p>
-    </button>
+    <Link to={`/${link}`}>
+      <section className="itemSelector">
+        <div className="iconSelector">
+          <img src={icon} alt="Icon Product" />
+        </div>
+        <div className="titleSelector">
+          <p>{title}</p>
+        </div>
+        <p className="descriptionSelector">{description}</p>
+      </section>
+    </Link>
   );
 };
+

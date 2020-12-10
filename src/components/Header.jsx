@@ -1,5 +1,6 @@
 // ------------------------------ import libraries
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 // ------------------------------ import styles and images
 import logo from '../assets/images/Maybelline_1.png'
@@ -15,8 +16,8 @@ export const Header = () => {
           <img src={logo} alt="Logo Maybelline"/>
         </div>
         <nav className="nav">
-          <a href="">Home</a>
-          <a href="">About</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
         </nav>
       </div>
     </header>
