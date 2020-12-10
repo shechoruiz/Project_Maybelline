@@ -6,6 +6,10 @@
   display: flex;
   justify-content: center;
   margin: 5% auto;
+  @include for-phone-only{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .imgContainer {
@@ -13,6 +17,9 @@
   box-shadow: $shadow1;
   border-radius: $radius1;
   margin: 0 10px;
+  @include for-phone-only{
+    width: initial;
+  }
 }
 
 .imgContainer img {
@@ -28,9 +35,30 @@
   box-shadow: $shadow1;
   border-radius: $radius1;
   padding: 30px;
+  @include for-phone-only{
+    width: initial;
+  }
 }
 
 .descriptionContainer h3,
 .descriptionContainer p {
   text-align: left;
+}
+
+.descriptionContainer h3{
+  @include for-tablet-portrait-up{
+    font-size: 16px;
+  }
+  @include for-phone-only{
+    font-size: $size4;
+  }
+}
+
+.descriptionContainer p{
+  @include for-tablet-portrait-up{
+    font-size: $size4;
+  }
+  @include for-phone-only{
+    font-size: 12px;
+  }
 }
