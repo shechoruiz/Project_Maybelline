@@ -1,0 +1,49 @@
+@import './variables';
+@import './mixins';
+
+.search-form {
+  min-height: 10vh;
+  align-items: center;
+  @include for-phone-only{
+    margin-bottom: 20px;
+  }
+}
+
+.search-bar {
+  margin: 50px;
+  width: 50%;
+  color: $color5;
+  font-family: $font1;
+  font-size: $size3;
+  height: 10px;
+  border: none;
+  padding: 20px;
+  background-color: $color4;
+  border-radius: 60px;
+  text-transform: capitalize;
+  outline: none;
+  @include for-phone-only{
+    margin-bottom: 10px;
+    width: 70%;
+    margin: 20px auto;
+  }
+}
+
+.search-button {
+  background-color: $color4;
+  border: none;
+  border-radius: 70px;
+  height: 50px;
+  width: 190px;
+  padding: 10px;
+  font-family: $font1;
+  font-weight: 700;
+  font-size: $size3;
+  color: $color5;
+  cursor: pointer;
+  text-transform: capitalize;
+  outline: none;
+  @include for-phone-only{
+    font-size: $size4;
+  }
+}

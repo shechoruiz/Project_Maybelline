@@ -7,6 +7,7 @@ import { Home } from './pages/Home';
 import { Aboutt } from './pages/About';
 import { Brands } from './pages/Brands';
 import { ProdTypes } from './pages/ProdTypes';
+import { MakeUpProvider } from './utils/MakeupContext';
 
 // ------------------------------ import styles and images
 // import logo from './logo.svg';
@@ -18,12 +19,14 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={Aboutt} />
-          <Route exact path="/brands" component={Brands} />
-          <Route exact path="/prod_types" component={ProdTypes} />
-        </Switch>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={Aboutt} />
+            <MakeUpProvider>
+              <Route exact path="/brands" component={Brands} />
+            </MakeUpProvider>
+            <Route exact path="/prod_types" component={ProdTypes} />
+          </Switch>
       </BrowserRouter>
     </div>
   );

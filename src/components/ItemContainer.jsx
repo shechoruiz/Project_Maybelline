@@ -21,13 +21,13 @@ export const ItemContainer = () => {
         link="prod_types"
         icon={icon1}
         title="PRODUCT TYPES"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non facere veniam similique ad. Quia, corrupti."
+        description="The type of makeup being searched for (ie. lipstick, eyeliner). See list of product types below. Will return a list of all products of this type."
       />
       <ItemSelector
         link="brands"
         icon={icon2}
         title="BRANDS"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non facere veniam similique ad. Quia, corrupti."
+        description="Brand of the product. Consult the list of products according to the brand. It will return all the products of each brand."
       />
     </section>
   );

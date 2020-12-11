@@ -1,0 +1,41 @@
+@import './variables';
+@import './mixins';
+
+.card {
+    font-family: $font1;
+    border-radius: 10px;
+    box-shadow: $shadow1;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    align-items: center;
+    width: 200px;
+    height: 460px;
+    padding: 20px;
+}
+
+.item-image {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: $size4;
+    text-transform: capitalize;
+}
+
+.buttonStyle:hover {
+    background-color: #F39999;
+    transform: scale(1.01);
+}
+
+.buttonStyle {
+    background-color: $color1;
+    color: $color5;
+    font-weight: 700;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}

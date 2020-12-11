@@ -1,0 +1,25 @@
+@import './variables';
+@import './mixins';
+
+.titleBrands{
+  width: 100%;
+  height: auto;
+  box-shadow: $shadow1;
+}
+
+.titleBrands h1{
+  font-size: $size2;
+  margin-bottom: 0;
+  @include for-tablet-portrait-up{
+    font-size: $size3;
+  }
+  @include for-phone-only{
+    font-size: $size4;
+  }
+}
+
+.makeUpItems{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
